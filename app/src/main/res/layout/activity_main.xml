@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/fragment_first"
+        android:name="com.example.lesson6alisa.ChangeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:layout="@layout/fragment_change"
+
+    />
+
+    <fragment
+        android:id="@+id/fragment_second"
+        android:name="com.example.lesson6alisa.TextFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:layout="@layout/fragment_text"/>
+
+
+    <FrameLayout
+        android:id="@+id/third_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ThirdFragment"
+
+        />
+
+
+</LinearLayout>
